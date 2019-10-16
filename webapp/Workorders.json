@@ -1,0 +1,28 @@
+{
+  "Workorders": [
+	{
+	  "WorkOrder": 4002700,
+	  "WorkOrderDesc": "UOM Task List Test",
+	  "Equipment": "IBC 1",
+	  "EquipmentDesc": "Heavy Duty IBC (10005101)",
+	  "Date": "02.10.2019",
+	  "Instance": "002"
+	},
+	{
+	  "WorkOrder": 4002701,
+	  "WorkOrderDesc": "UOM Task List Test",
+	  "Equipment": "IBC 2",
+	  "EquipmentDesc": "Heavy Duty IBC (10005102)",
+	  "Date": "02.10.2019",
+	  "Instance": "002"
+	},
+	{
+	  "WorkOrder": 4002702,
+	  "WorkOrderDesc": "UOM Task List Test",
+	  "Equipment": "IBC 3",
+	  "EquipmentDesc": "Heavy Duty IBC (10005103)",
+	  "Date": "02.10.2019",
+	  "Instance": "002"
+	}
+  ]
+}

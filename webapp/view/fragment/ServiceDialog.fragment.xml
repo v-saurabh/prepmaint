@@ -1,0 +1,15 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<SelectDialog
+		title="{i18n>serviceValueHelpTitle}"
+		class="sapUiPopupWithPadding"
+		items="{serviceModel>/Services}"
+		search="_handleServiceValueHelpSearch"
+		confirm="_handleServiceValueHelpClose"
+		cancel="_handleServiceValueHelpClose">
+		<StandardListItem
+			title="{serviceModel>ServiceID}"
+			description="{serviceModel>ServiceName}" />
+	</SelectDialog>
+</core:FragmentDefinition>

@@ -1,0 +1,35 @@
+{
+    "application": {
+        "id": "",
+        "title": "com.demo.zprepmaint.zprepmaint",
+        "description": "Prepare Maintenance app for PM Technician",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#maintenance-prepare",
+        "navigationComponentName": "com.demo.zprepmaint",
+        "intentSemanticObject": "maintenance",
+        "intentAction": "prepare",
+        "html5ApplicationName": "zprepmaint",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "e06b4b1f-ffc6-4fae-89f0-c9f17524b598-1571035383239"
+        ],
+        "contentPackages": [
+            "b4adcc1a-d3bc-435b-81ab-7e5723f6f5f7-1571035360394"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "Prepare Maintenance",
+        "subtitle": "",
+        "searchKeywords": "Prepare Maintenance,",
+        "displayIconUrl": "sap-icon://eam-work-order",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}

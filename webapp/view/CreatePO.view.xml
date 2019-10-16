@@ -1,0 +1,56 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.demo.zprepmaint.controller.CreatePO"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="{i18n>pageCreatePoTitle}" showNavButton="true" navButtonPress="onNavBack">
+				<content>
+					<Table id="tabServItems" items="{/data}" growing="true" growingThreshold="5" growingScrollToLoad="false">
+						<headerToolbar>
+							<Toolbar height="3rem">
+								<ToolbarSpacer/>
+								<Button text="{i18n>tableHeaderButtonAddService}" type="Default" tooltip="Add more services" press="onAddService"/>
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column id="colVendor">
+								<header>
+									<Label text="{i18n>tableVendorLbl}" id="headVendor"/>
+								</header>
+							</Column>
+						</columns>
+						<columns>
+							<Column id="colService">
+								<header>
+									<Label text="{i18n>tableServiceLbl}" id="headService"/>
+								</header>
+							</Column>
+						</columns>
+						<columns>
+							<Column id="colMatlText" demandPopin="true" minScreenWidth="Tablet">
+								<header>
+									<Label text="{i18n>tableMatlTextLbl}" id="headMatlText"/>
+								</header>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem id="itemlist">
+								<cells>
+									<Text text="{Vendor}"/>
+									<Text text="{Service}"/>
+									<Text text="{MatlText}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+				<footer>
+					<OverflowToolbar>
+						<ToolbarSpacer/>
+						<Button text="{i18n>buttonSavePo}" width="50%" type="Accept" press="onSubmit"/>
+						<ToolbarSpacer/>
+					</OverflowToolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
