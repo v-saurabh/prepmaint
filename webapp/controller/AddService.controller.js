@@ -151,6 +151,7 @@ sap.ui.define([
 			if(oSelectedItem) {
 				var vendorInput = this.byId(this.inputId);
 				vendorInput.setValue(oSelectedItem.getTitle());
+				//this.getOwnerComponent().getModel("serviceFormModel").getData().Vendor = oSelectedItem.getTitle();
 			}
 			oEvent.getSource().getBinding("items").filter([]);
 		},
@@ -160,6 +161,7 @@ sap.ui.define([
 			if(oSelectedItem) {
 				var serviceInput = this.byId(this.inputId);
 				serviceInput.setValue(oSelectedItem.getTitle());
+				// this.getOwnerComponent().getModel("serviceFormModel").getData().Service = oSelectedItem.getTitle();
 			}
 			oEvent.getSource().getBinding("items").filter([]);
 		},

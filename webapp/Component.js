@@ -27,6 +27,16 @@ sap.ui.define([
 			// set the device model
 			this.setModel(models.createDeviceModel(), "device");
 			
+			//local model for the add service form fields
+			var oServiceFormData = {
+				"Vendor":"",
+				"Service": "",
+				"MaterialText": ""
+			};
+			var oserviceFormModel = new JSONModel();
+			oserviceFormModel.setData(oServiceFormData);
+			this.setModel(oserviceFormModel, "serviceFormModel");
+			
 			//create model for adding service items
 			var servModelData = {
 				data: []
